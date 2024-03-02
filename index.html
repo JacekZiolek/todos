@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Todos</title>
+    <script
+      src="https://kit.fontawesome.com/67ba5bfdc1.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container mx-auto px-8 text-center text-white">
+      <header class="my-8">
+        <h1 class="text-2xl mb-4">Todo List</h1>
+        <form class="search">
+          <input
+            class="text-center w-full border-2 rounded-xl m-auto py-2"
+            type="text"
+            name="search"
+            placeholder="search todos"
+          />
+        </form>
+      </header>
+      <ul class="todos lg:w-3/4 mx-auto">
+        <li
+          class="flex justify-between items-center py-4 px-8 mb-4 rounded-2xl"
+        >
+          <span>read Lord of the Rings</span>
+          <i class="far fa-trash-alt delete"></i>
+        </li>
+        <li
+          class="flex justify-between items-center py-4 px-8 mb-4 rounded-2xl"
+        >
+          <span>workout</span>
+          <i class="far fa-trash-alt delete"></i>
+        </li>
+        <li
+          class="flex justify-between items-center py-4 px-8 mb-4 rounded-2xl"
+        >
+          <span>practice coding</span>
+          <i class="far fa-trash-alt delete"></i>
+        </li>
+      </ul>
+      <form class="add flex flex-col gap-4">
+        <label>Add a new todo...</label>
+        <input
+          class="py-2 px-4 rounded-xl mx-auto w-full"
+          type="text"
+          name="add"
+        />
+      </form>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
