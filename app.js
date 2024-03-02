@@ -39,8 +39,8 @@ list.addEventListener("click", (event) => {
 const filterTodos = (searchInput) => {
   Array.from(list.children).forEach((todo) => {
     const todoToLower = todo.textContent.toLowerCase();
-    const termToLower = searchInput.toLowerCase();
-    !todoToLower.includes(termToLower)
+    const searchInputToLower = searchInput.toLowerCase();
+    !todoToLower.includes(searchInputToLower)
       ? todo.classList.add("hidden")
       : todo.classList.remove("hidden");
   });
